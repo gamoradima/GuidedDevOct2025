@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "0ac2c2d5-9fd1-4553-a688-d1fcb1e3baf2",
+    "Name": "UsrGetCompanyInfoFromDNBServiceProcess",
+    "ModifiedOnUtc": "\/Date(1761289924000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Get company info MAIN process",
+    "DependsOn": []
+  }
+}

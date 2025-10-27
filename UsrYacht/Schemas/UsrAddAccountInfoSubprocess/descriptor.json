@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "cb603ff3-0c11-4215-9653-66a8542626f2",
+    "Name": "UsrAddAccountInfoSubprocess",
+    "ModifiedOnUtc": "\/Date(1761289712000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Add account info subprocess",
+    "DependsOn": []
+  }
+}

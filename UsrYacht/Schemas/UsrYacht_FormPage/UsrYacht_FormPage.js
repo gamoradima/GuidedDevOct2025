@@ -1241,11 +1241,26 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_
 						let passengers = await request.$context.PDS_UsrPassengersCount_cwbltir;
 						let ticket_price = price / passengers;
 						request.$context.PDS_UsrTicketPrice_uc9rltf = ticket_price;
+
+						console.log("First handler started...");
+
 					}
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}
 			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				/* The custom implementation of the system query handler. */
+				handler: async (request, next) => {
+			      	if (request.attributeName === 'PDS_UsrPrice_yyob1w6') {                  // if price changed
+						console.log("Second handler started...");
+					}
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			},
+			
 			{
 				request: "usr.RunWebServiceRequest",
 				/* Implementation of the custom query handler. */
